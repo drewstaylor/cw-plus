@@ -352,6 +352,7 @@ dependencies = [
 name = "cw1-whitelist"
 version = "0.8.1"
 dependencies = [
+ "anyhow",
  "cosmwasm-schema",
  "cosmwasm-std",
  "cw-multi-test 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -359,6 +360,7 @@ dependencies = [
  "cw0 0.8.1",
  "cw1",
  "cw2",
+ "derivative",
  "schemars",
  "serde",
  "thiserror",
@@ -652,6 +654,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "31e21d2d0f22cde6e88694108429775c0219760a07779bf96503b434a03d7412"
 dependencies = [
  "const-oid",
+]
+
+[[package]]
+name = "derivative"
+version = "2.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fcc3dd5e9e9c0b295d6e1e4d811fb6f157d5ffd784b8d202fc62eac8035a770b"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
 ]
 
 [[package]]
